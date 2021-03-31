@@ -1,0 +1,116 @@
+/* bebas-neue-regular - latin */
+@font-face {
+    font-family: 'Bebas';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/bebas-neue-v2-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/bebas-neue-v2-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  body{
+      color:#6d6d6d
+  }
+
+  .form-container {
+      position: fixed;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      border: 4px solid #6d6d6d;
+      padding: 20px 10px;
+      text-align: center;
+      background-color: #cecece;
+}
+
+.form__input{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all .3s ease;
+}
+.form__input label{
+    
+}
+.form__input:hover,
+.form__input:focus{
+    background-color: #b4dbf1;
+    outline: 1px solid #017d8d;
+}
+.form__input{
+    font-family: 'Bebas', sans-serif;
+}
+
+
+.form__span{
+    margin-left: 125px;
+    font-family: none;
+}
+.form__select{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #6d6d6d;
+    border-bottom:1px solid #6d6d6d;
+    margin-bottom: 10px;
+}
+.form__total {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.form__total span{
+    color: #017d8d;
+}
+.form__btn{
+    width: 120px;
+    height: 40px;
+    background-color: #37e05c;
+    color: #fafafa;
+    font-size: 12px;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+}
+select{
+    border: 1px solid#017d8d;
+}
+
+.form__radio{
+
+   position: absolute;
+   width: 0px;
+   height: 1px;
+   overflow: hidden;
+   clear: rect(0 0 0 0);
+
+}
+.check__stile{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 10px;
+    left:10px;
+    border: 2px solid #0b37c9;
+    border-radius: 50%;
+}
+
+.form__radio:checked + .check__stile::after{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #017d8d;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
